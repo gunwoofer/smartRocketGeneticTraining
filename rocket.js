@@ -7,11 +7,11 @@ class Rocket {
 
     show() {
         push();
+        fill(255, 100);
         translate(this.position.x, this.position.y, this.position.z);
-        rotate(this.acceleration.heading());
+        rotate(this.speed.heading());
         rectMode(CENTER);
-        fill(255);
-        rect(0, 0, 10, 50);
+        rect(0, 0, 25, 5);
         pop();
     }
 
